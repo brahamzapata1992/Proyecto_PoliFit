@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portal Polifit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Mi Portal Polifit</h1>
+    <p>Registra tu rutina y consumo de calorías 💪</p>
+  </header>
+
+  <main>
+    <!-- Sección de ejercicios -->
+    <section id="ejercicios">
+      <h2>Rutina de Ejercicio</h2>
+      <form id="form-ejercicio">
+        <input type="text" id="nombreEjercicio" placeholder="Ej: Correr, abdominales..." required>
+        <input type="number" id="minutosEjercicio" placeholder="Minutos" required>
+        <button type="submit">Agregar</button>
+      </form>
+      <ul id="listaEjercicios"></ul>
+    </section>
+
+    <!-- Sección de calorías -->
+    <section id="calorias">
+      <h2>Consumo de Calorías</h2>
+      <form id="form-calorias">
+        <input type="text" id="nombreComida" placeholder="Ej: Almuerzo, Snack..." required>
+        <input type="number" id="caloriasComida" placeholder="Calorías" required>
+        <button type="submit">Agregar</button>
+      </form>
+      <ul id="listaCalorias"></ul>
+    </section>
+
+    <!-- Resumen del día -->
+    <section id="resumen">
+      <h2>Resumen Diario</h2>
+      <p><strong>Total minutos de ejercicio:</strong> <span id="totalMinutos">0</span></p>
+      <p><strong>Total calorías consumidas:</strong> <span id="totalCalorias">0</span></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>  
